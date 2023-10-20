@@ -6,20 +6,22 @@ import { Blogs } from '../data/blogs'
 const Blog = () => {
 
 const[blog, setBlogs] = useState(null)
-const {id} =useParams();
+const {id} =useParams("page");
 
 
-useEffect(
-   () => {   
-      setBlogs(
-        Blogs.filter(
-          (d, i) => {
-            return d.id === id;
-          }
-        )
-      )
-  },[]
-)
+// useEffect(
+//    () => {   
+//     console.log(id)
+//     console.log(blog)
+//       setBlogs(
+//         Blogs.filter(
+//           (d, i) => {
+//             return d.id === id;
+//           }
+//         )
+//       )
+//   },[]
+// )
 
 
   return (
@@ -27,7 +29,7 @@ useEffect(
 <>
   <Navbar />
     <div className=' grid grid-cols-4 gap-4 shadow-md w-[80%] mx-auto'>
-      {blog !== null 
+      {/* {blog !== null 
       ?
       <>
         {blog.length > 0 
@@ -40,7 +42,7 @@ useEffect(
       </> 
       : 
       "Not Found" 
-    }
+    } */}
 
     </div>
   </>

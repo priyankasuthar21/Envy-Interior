@@ -8,7 +8,7 @@ const FeatureCategory = () =>{
                 <div className='mx-auto mt-3 '>
                     <FeatureData img= {d.img} key = {d.id} id= {d.id} />
                     <div className='text-center text-xl mt-2 font-semibold'>
-                        <Link  to={`/blog/${d.id}`}>{d.title}</Link> 
+                        <Link  to={`/blog/?page=${d.id}`}>{d.title}</Link> 
                     </div>   
                 </div>
             )
