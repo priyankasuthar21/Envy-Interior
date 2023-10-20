@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import { Blogs } from '../data/blogs'
+// import { useParams } from 'react-router-dom'
+// import { useState } from 'react'
+// import { Blogs } from '../data/blogs'
 const Blog = () => {
 
-const[blog, setBlogs] = useState(null)
-const {id} =useParams("page");
+// const[blog, setBlogs] = useState(null)
+// const {id} =useParams("page");
 
 
 // useEffect(
