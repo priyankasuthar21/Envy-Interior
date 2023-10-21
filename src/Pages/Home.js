@@ -1,5 +1,4 @@
 import Navbar from '../Components/Navbar'
-import imgHeroSection from "./../images/banner1.jpg"
 import FeatureCategory from '../Components/FeatureCategory'
 import AboutWebpage from '../Components/AboutHomeSec'
 import AboutImg from './../images/about.jpg'
@@ -22,7 +21,7 @@ return (
 
       <Navbar />  
 
-      <Banner img = {imgHeroSection} />
+      <Banner/>
 
       <div className='text-center my-10'>
           <HeadingPara heading = {"Welcome To Home Interior"} para = {"We all know what our ideal home looks like, and often it's making this vision a reality that's difficult to achieve."} className = "text-center"/>
@@ -39,8 +38,8 @@ return (
       <ProductServices />
 
       <BestSeller />
-      <div className='mt-12'>
-        <Image img = {Banner2} title = {"hellow"} ></Image>
+      <div className='mt-12 w-[100%]  '>
+        <Image img = {Banner2} ></Image>
         {/* <img  src= {Banner2} alt='' /> (Use this type also) */}
       </div>  
       <ShippingPolicy />

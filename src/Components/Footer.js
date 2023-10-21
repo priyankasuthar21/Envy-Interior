@@ -4,11 +4,11 @@ import logo from './../images/Logo.png'
 function Footer() {
   return (
     <>
-      <footer className="border border-t-2 shadow-inner">
+      <footer className="border border-t-2 shadow-inner mt-14">
         <div className="grid grid-cols-5 gap-4 py-10">
             <div>
                 <Link to ="/" >
-                    <img src= {logo} alt=""/>
+                    <img src= {logo} alt="" />
                 </Link>
             </div>
             <div>

@@ -23,8 +23,8 @@ const Navbar = () => {
                 <Link to= {"/services"}>Services</Link>
                 <Link to= {"/contact"}>Contact</Link>
                 <Link to={"/login"}>Login</Link>
-                <Link to={"/cart"}>Cart ({cart.length})</Link>
-                <Link to={"/wishlist"}>
+                <Link to={"/cartpage"}>Cart ({cart.length})</Link>
+                <Link to={"/wishlistpage"}>
                     <AiFillHeart className='text-xl inline-block'/> ({wishList.length})
                 </Link>
             </ul>

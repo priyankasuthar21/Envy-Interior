@@ -17,7 +17,7 @@ const FeatureCategory = () =>{
 
     return(
     <>
-        <div className='w-[80%] container mx-auto grid  gap-6 lg:grid-cols-6 sm:grid-cols-3'> 
+        <div className='w-[80%] container mx-auto grid  gap-6 lg:grid-cols-6 grid-cols-2 md:grid-cols-3'> 
             {featureItems}
         </div>
     </>        

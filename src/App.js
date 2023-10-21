@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import ProductCart from './Pages/ProductCart';
 import NotFound from './Pages/NotFound';
+import CartPage from './Pages/CartPage';
 import { BrowserRouter as
   Router,
   Route,
@@ -15,8 +16,7 @@ import { BrowserRouter as
 } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
 import Blog from './Pages/Blog';
-import Cart from './Components/Cart';
-import WishList from './Components/WishList'
+import WishListPage from './Pages/WishListPage';
 import CheckOut from './Pages/CheckOut';
 import ProductPage from './Pages/ProductPage';
 function App() {
@@ -34,8 +34,8 @@ function App() {
         <Route path='/product_cart' element = {<ProductCart />} ></Route>
         <Route path='*' element= {<NotFound />} ></Route>
         <Route path= '/blog/:id' element = {<Blog />} ></Route>   
-        <Route path='/cart' element ={<Cart />}></Route> 
-        <Route path='/wishlist' element = {<WishList />}></Route>   
+        <Route path='/cartpage' element ={<CartPage />}></Route> 
+        <Route path='/wishlistpage' element = {<WishListPage />}></Route>   
         <Route path='/checkout' element = {<CheckOut />}></Route>
         <Route path='/productpage' element = {<ProductPage />}></Route>
 

@@ -18,7 +18,7 @@ const Product = () => {
   return (
     <>
         <h1 className='text-3xl font-semibold text-center'>Best Sellers</h1>
-        <div className='w-[80%] mt-10 mx-auto grid  gap-6  md:grid-cols-4 sm:grid-cols-2 container'>   
+        <div className='w-[80%] mt-10 mx-auto grid  gap-6  md:grid-cols-4 grid-cols-2 container'>   
             {productData}
         </div>
     </>
@@ -36,8 +36,8 @@ const Card = ({img, title, price, id, desc}) => {
             <div className='p-1'>{desc}</div>
             <div className='p-2 font-bold'>Price - ₹{price}</div>
             <div className='flex justify-between gap-3  pt-3 px-2'>
-                <button className='btn p-2 w-[150px] font-bold rounded-full bg-[#3C5556] text-white' onClick={() => addToCart(id)}>Add To Cart</button>
-                <BsFillHeartFill className = {'font-bold fill-[#3C5556]  text-3xl'} onClick={() => addToWishList(id)} />
+                <button className='btn p-2 md:w-[150px] font-bold rounded-full bg-[#3C5556] text-white' onClick={() => addToCart(id)}>Add To Cart</button>
+                <BsFillHeartFill className = {'font-bold fill-[#3C5556]  md:text-3xl'} onClick={() => addToWishList(id)} />
                 {/* <button className='btn p-2 w-[80px] font-bold rounded-full bg-[#3C5556] text-white' onClick={() => addToWishList(id)}>Like</button> */}
             </div>
         </div>

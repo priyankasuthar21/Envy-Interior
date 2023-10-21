@@ -8,7 +8,7 @@ const AboutMidSection = () => {
   return (
     <div className='w-[100%]'>
         <div className='mx-auto relative'>
-            <img src = {AboutSection} alt='' className='md:w-[100%] w-[50%]' />    
+            <img src = {AboutSection} alt='' className='md:w-[100%]' />    
             <h1 className='absolute md:top-[30%] md:left-[42%] left-[25%] top-5 bg-[#c8dbd7c5] md:py-10 text-4xl  md:px-10 py-3 px-4'>About Us</h1>
         </div>
        

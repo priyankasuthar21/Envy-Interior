@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Navbar from './Navbar'
 import { EcomContext } from '../Context/ContextHolder'
     const Cart = () => {
     const {cart} = useContext(EcomContext)
@@ -13,7 +12,6 @@ import { EcomContext } from '../Context/ContextHolder'
     return (
  
          <>
-         <Navbar />
          <div className=''>
             {cartProductItem}
          </div>
@@ -35,7 +33,7 @@ const CartItem = ({productId, qty, index}) => {
 
     return(
         <>
-        <div className='w-[80%] p-2 container grid md:grid-cols-4 sm:grid-cols-2 gap-4 mt-10 mx-auto   '>
+        <div className='w-[80%] p-2 container grid md:grid-cols-4 grid-cols-2 gap-4 mt-10 mx-auto   '>
             <div className='w-[100px]  mx-auto'>
                 {cartProduct[0].thumbnail}
             </div>
@@ -54,7 +52,7 @@ const CartItem = ({productId, qty, index}) => {
                 <div> ₹{cartProduct[0].price * qty} </div>
             </div>
         </div>
-        <button className='btn py-3 px-4 bg-[#3C5556] text-white w-[30%] text-2xl'>Checkout</button>
+        {/* <button className='btn py-3 px-4 bg-[#3C5556] text-white w-[30%] text-2xl'>Checkout</button> */}
         </>
     )
 }

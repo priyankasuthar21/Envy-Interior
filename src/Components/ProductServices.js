@@ -17,7 +17,7 @@ const ProductServices = () => {
       <HeadingPara heading = {"From Exterior To Internal Giving Your Home a New Style Every Style"} />
       </div>
       
-      <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-4 w-[80%]  container mx-auto mt-7 text-center'>
+      <div className='grid md:grid-cols-4 grid-cols-2 gap-4 w-[80%]  container mx-auto mt-7 text-center'>
         {productItems}
       </div>    
     </div>
