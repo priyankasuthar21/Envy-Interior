@@ -2,7 +2,7 @@ import React from 'react'
 
 const ViewCategory = () => {
   return (
-    <div>ViewCategory</div>
+    <div>View Category</div>
   )
 }
 
