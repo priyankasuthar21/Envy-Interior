@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <footer className="border border-t-2 shadow-inner mt-14">
-        <div className="grid grid-cols-5 gap-4 py-10">
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-4 py-10 p-10 text-justify ">
             <div>
                 <Link to ="/" >
                     <img src= {logo} alt="" />
@@ -44,7 +44,7 @@ function Footer() {
                     <Link to= {"/"}>Wardrobs</Link>     
                 </ul>
             </div>
-            <div>
+            {/* <div>
                 <h3 className="mb-2 text-xl font-semibold">Services</h3>
                 <ul className="flex flex-col gap-2">
                     <Link to= {"/"}>Custom Products</Link> 
@@ -52,7 +52,7 @@ function Footer() {
                     <Link to= {"/"}>Customer Care</Link> 
                     <Link to= {"/"}>24/7 Service</Link>     
                 </ul>
-            </div>
+            </div> */}
         </div>
       </footer>
     </>

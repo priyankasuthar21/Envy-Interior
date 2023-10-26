@@ -5,17 +5,17 @@ import sec43 from '../images/sec4(3).jpg'
 import Image from './ImageComp'
 export const threeImg = [
     {   id:1,
-        img: <Image img = {sec41} />,
+        img: <Image img = {sec41} width={"100%"} />,
         title: "Tables",
         desc: "Interior designing is the art and science which enhances your mind  "
     },
     {   id: 2,
-        img: <Image img = {sec42} />,
+        img: <Image img = {sec42} width={"100%"}/>,
         title: "Chairs",
         desc: "Interior designing is the art and science which enhances your mind  "
     },
     {   id: 3,
-        img: <Image img = {sec43} />,
+        img: <Image img = {sec43} width={"100%"}/>,
         title: "Interiors",
         desc: "Interior designing is the art and science which enhances your mind "
     }

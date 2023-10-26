@@ -6,12 +6,11 @@ import ProductServices from '../Components/ProductServices'
 import ThreeImgSection from '../Components/ThreeImgSection'
 import TwoImgSection from '../Components/TwoImgSection'
 import BestSeller from '../Components/BestSeller'
-import Banner2 from './../images/bb.webp'
 import ShippingPolicy from '../Components/ShippingPolicy'
 import Footer from '../Components/Footer'
-import Image from '../Components/ImageComp'
 import HeadingPara from '../Components/HeadingPara'
 import Banner from '../Components/Banner'
+import Banner2 from '../Components/Banner2'
 
 const Home = () => {
 
@@ -38,10 +37,7 @@ return (
       <ProductServices />
 
       <BestSeller />
-      <div className='mt-12 w-[100%]  '>
-        <Image img = {Banner2} ></Image>
-        {/* <img  src= {Banner2} alt='' /> (Use this type also) */}
-      </div>  
+      <Banner2 />
       <ShippingPolicy />
          
       <Footer />
