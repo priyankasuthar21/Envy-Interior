@@ -39,26 +39,8 @@ const Navbar = () => {
     const {cart} = useContext(EcomContext);
     const {wishList} = useContext(EcomContext)
     return(
-        <div className='py-3 bg-[#3C5556] text-white  flex-none md:flex justify-between md:items-center px-5 '>
-            {/* <div className="text-bold md:flex italic justify-between items-center">
-                Interior
-                <SiHomeadvisor fill='white' className='text-4xl'/>
-                Designs
-            </div>          
-            <ul className='md:flex   md:gap-4'> 
-                <Link to= {"/"}>Home</Link>
-                <Link to= {"/about"}>About</Link>
-                <Link to= {"/gallery"}>Gallery</Link>
-                <Link to= {"/services"}>Services</Link>
-                <Link to= {"/contact"}>Contact</Link>
-                <Link to={"/login"}>Login</Link>
-                <Link to={"/cartpage"}>Cart ({cart.length})</Link>
-                <Link to={"/wishlistpage"}>
-                    <AiFillHeart className='text-xl inline-block'/> ({wishList.length})
-                </Link>
-            </ul> */}
-
-
+        <div className='py-3 bg-[#3C5556] text-white  justify-between md:items-center px-5 '>
+           
 <Disclosure as="nav">
           {({ open }) => (
             <>
@@ -72,6 +54,10 @@ const Navbar = () => {
                         Designs
                       </div>  
                     </div>
+                   
+                  </div>
+                  <div className="hidden md:block">
+                    <div className="ml-4 flex items-center md:ml-6">
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
@@ -91,9 +77,6 @@ const Navbar = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
-                  <div className="hidden md:block">
-                    <div className="ml-4 flex items-center md:ml-6">
                       <button
                         type="button"
                         className="relative rounded-full bg-gray-200 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-100"
@@ -121,7 +104,7 @@ const Navbar = () => {
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
                         >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 ">
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
